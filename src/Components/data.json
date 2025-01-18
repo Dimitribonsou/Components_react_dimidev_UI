@@ -1,0 +1,30 @@
+[
+    {
+        "id":1,
+        "nom":"bonsou",
+        "prenom":"dimitri",
+        "age":15,
+        "telephone":"674606328"
+    },
+    {
+        "id":2,
+        "nom":"dimidev",
+        "prenom":"officiel",
+        "age":18,
+        "telephone":"674606328"
+    },
+    {
+        "id":3,
+        "nom":"kamga",
+        "prenom":"alex",
+        "age":12,
+        "telephone":"674606328"
+    },
+    {
+        "id":4,
+        "nom":"tamouya",
+        "prenom":"arno",
+        "age":15,
+        "telephone":"674606328"
+    }
+]

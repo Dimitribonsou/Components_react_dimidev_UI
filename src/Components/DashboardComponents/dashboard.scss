@@ -1,0 +1,9 @@
+*{
+    -webkit-transition: .1s linear;
+    transition: .1s linear;  
+}
+.tr.tr:nth-child(2n){
+    // background-color: #3b82f6;
+    background-color: gainsboro;
+    color: black;
+}

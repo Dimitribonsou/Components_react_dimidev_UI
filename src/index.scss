@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body
+{
+    overflow-x: hidden;
+    // background-color: #f1f1f1f1;
+    width: 100vw;
+}
+
+// .side-bar{
+//     transition:  all 10s ease-in-out;
+// }
