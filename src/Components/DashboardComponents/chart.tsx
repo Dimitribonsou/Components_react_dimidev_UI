@@ -90,7 +90,7 @@ const MyChart = () => {
   }, []);
 
   return(
-    <div className='flex justify-center items-start h-fit gap-5  w-auto  '>
+    <div className='flex justify-center items-start h-fit gap-5  w-auto'>
       <canvas id="myChart" className='w-3/4 h-14'  ></canvas>
       <canvas id="statCirculaire" className='w-3/4 h-14' ></canvas>
     </div>
