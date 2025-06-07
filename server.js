@@ -8,6 +8,23 @@ const PORT = 3000;
 
 app.use(bodyParser.json());
 
+// Servir des fichiers statiques depuis le répertoire 'public'
+app.use('/images', express.static(path.join(__dirname, 'public/images')));
+
+// Route pour télécharger un fichier
+app.get('/download/:filename', (req, res) => {
+    const filename = req.params.filename;
+    const filePath = path.join(__dirname, 'public/images', filename);
+
+    // Vérifier si le fichier existe avant de le télécharger
+    res.download(filePath, filename, (err) => {
+        if (err) {
+            console.error('Erreur lors du téléchargement du fichier:', err);
+            res.status(404).send('Fichier non trouvé');
+        }
+    });
+});
+
 app.post('/add-user', (req, res) => {
     const newUser = req.body;
 

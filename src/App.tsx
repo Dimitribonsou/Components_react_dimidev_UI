@@ -7,6 +7,7 @@ import {  Routes, Route, BrowserRouter as Router } from 'react-router-dom';
 import ImageUpload from './Components/imageUpload';
 import Dashboard from './Components/DashboardComponents/dashboard';
 import Admin from './Components/admin';
+import Navbar from './Components/navbar';
 
 function App() {
   const [showsidebar ,setShowsidebar]=useState<boolean>(true);
@@ -21,7 +22,7 @@ function App() {
       <Router>
          {/* <Navbar state/> */}
         <Routes>
-            <Route path='/' element={<Dashboard />}/>
+            <Route path='/' element={<Navbar state />}/>
             <Route path='/admin' element={<Dashboard />}/>
             <Route path='/form' element={<Form />}/>
             <Route path='/list' element={<ListUser/>}/>

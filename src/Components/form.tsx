@@ -88,6 +88,9 @@ const  Form =():any =>{
             <input type="number" placeholder='Entrer votre age'value={age} onChange={(e)=>setAge(parseInt(e.target.value))} className='border border-1 border-teal-500 w-full outline-none h-10 indent-5 rounded-lg' required />
             <input type="button" value='Enregistrer' onClick={()=> fetchData()} className='border border-1 border-teal-500 bg-teal-800 text-white cursor-pointer w-full outline-none h-10 indent-5 rounded-lg'  />
         </div>
+        <a href="http://localhost:3000/download/1736245694419react-removebg-preview.png" download="logo_react.png">
+            Télécharger
+        </a>
      </div>
   );
   };
